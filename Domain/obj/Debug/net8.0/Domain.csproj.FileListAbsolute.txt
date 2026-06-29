@@ -1,0 +1,11 @@
+C:\workspace\BankApi\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\workspace\BankApi\Domain\bin\Debug\net8.0\Domain.dll
+C:\workspace\BankApi\Domain\bin\Debug\net8.0\Domain.pdb
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.dll
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\Domain.pdb
+C:\workspace\BankApi\Domain\obj\Debug\net8.0\ref\Domain.dll
