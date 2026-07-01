@@ -17,3 +17,4 @@ C:\workspace\BankApi\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\workspace\BankApi\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\workspace\BankApi\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\workspace\BankApi\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\workspace\BankApi\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

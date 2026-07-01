@@ -151,3 +151,6 @@ C:\workspace\BankApi\Api\obj\Debug\net8.0\refint\Api.dll
 C:\workspace\BankApi\Api\obj\Debug\net8.0\Api.pdb
 C:\workspace\BankApi\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\workspace\BankApi\Api\obj\Debug\net8.0\ref\Api.dll
+C:\workspace\BankApi\Api\obj\Debug\net8.0\Api.sourcelink.json
+C:\workspace\BankApi\Api\bin\Debug\net8.0\FluentValidation.dll
+C:\workspace\BankApi\Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

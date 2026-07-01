@@ -1,5 +1,7 @@
 using Application.Interfaces;
 using Application.Services;
+using Application.Validators;
+using FluentValidation;
 using Infrastructure;
 using Infrastructure.Repositories;
 
@@ -14,6 +16,8 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+
+builder.Services.AddValidatorsFromAssemblyContaining<RegisterUserDtoValidator>();
 
 var app = builder.Build();
 
