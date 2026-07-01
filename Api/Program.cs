@@ -1,6 +1,7 @@
 using Application.Interfaces;
 using Application.Services;
 using Application.Validators;
+using BankApi.Middleware;
 using FluentValidation;
 using Infrastructure;
 using Infrastructure.Repositories;
@@ -31,6 +32,8 @@ app.UseHttpsRedirection();
 
 // app.UseAuthentication();
 // app.UseAuthorization();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 

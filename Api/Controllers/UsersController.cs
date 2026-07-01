@@ -21,19 +21,12 @@ public class UsersController : ControllerBase
     [HttpPost("register")]
     public async Task<IActionResult> RegisterUser([FromBody] RegisterUserDto dto)
     {
-        try
+        var result = await _validator.ValidateAsync(dto);
+        if (!result.IsValid)
         {
-            var result = await _validator.ValidateAsync(dto);
-            if (!result.IsValid)
-            {
-                return BadRequest(result.ToDictionary());
-            }
-            var userId = await _userService.RegisterUserAsync(dto);
-            return Ok(new { UserId = userId });
+            return BadRequest(result.ToDictionary());
         }
-        catch (InvalidOperationException ex)
-        {
-            return BadRequest(new { Message = ex.Message });
-        }
+        var userId = await _userService.RegisterUserAsync(dto);
+        return Ok(new { UserId = userId });
     }
 }

@@ -21,12 +21,14 @@ public class UserService : IUserService
         if (exists)
             throw new InvalidOperationException("El email ya está registrado.");
 
+        var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+        
         var user = new User
         {
             Id = Guid.NewGuid(),
             Name = dto.Name,
             Email = dto.Email,
-            PasswordHash = dto.Password, // TODO: Hash the password before storing it
+            PasswordHash = passwordHash,
             Role = RoleEnum.User
         };
 

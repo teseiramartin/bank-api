@@ -154,3 +154,4 @@ C:\workspace\BankApi\Api\obj\Debug\net8.0\ref\Api.dll
 C:\workspace\BankApi\Api\obj\Debug\net8.0\Api.sourcelink.json
 C:\workspace\BankApi\Api\bin\Debug\net8.0\FluentValidation.dll
 C:\workspace\BankApi\Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\workspace\BankApi\Api\bin\Debug\net8.0\BCrypt-Net-Next.dll
