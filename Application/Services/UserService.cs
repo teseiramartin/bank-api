@@ -36,4 +36,17 @@ public class UserService : IUserService
 
         return user.Id;
     }
+
+    public async Task LoginAsync(LoginUserDto dto)
+    {
+        var user = await _userRepository.GetByEmailAsync(dto.Email);
+
+        if (user == null)
+            throw new InvalidOperationException("Usuario no encontrado.");
+
+        var isValidPassword = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
+
+        if (!isValidPassword)
+            throw new InvalidOperationException("Credenciales inválidas.");
+    }
 }
